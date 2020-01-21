@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  tel: MyString
+  address: MyString
+  HP: MyText
+  opentime: 2020-01-21 15:57:21
+  closetime: 2020-01-21 15:57:21
+  holiday: MyString
+
+two:
+  name: MyString
+  description: MyText
+  tel: MyString
+  address: MyString
+  HP: MyText
+  opentime: 2020-01-21 15:57:21
+  closetime: 2020-01-21 15:57:21
+  holiday: MyString
