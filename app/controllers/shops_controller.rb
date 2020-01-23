@@ -9,13 +9,20 @@ class ShopsController < ApplicationController
 
   def create
     @shop = Shop.new(shop_params)
-    @shop.save
-    redirect_to @shop, notice: "お店を登録しました。"
+    if @shop.save
+      redirect_to @shop, notice: "お店を登録しました。"
+    else
+      render :new
+    end
+  end
+
+  def show
+    @shop = Shop.find(params[:id])
   end
 
   private
 
   def shop_params
-    params.require(:shop).permit(:name, :description, :tel, :address, :HP, :opentime, :closetime, :holiday, :new_image)
+    params.require(:shop).permit(:name, :description, :tel, :address, :hp, :opentime, :closetime, :holiday, :new_image)
   end
 end

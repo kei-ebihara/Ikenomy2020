@@ -1,4 +1,5 @@
 <%= form_with model: shop, local: true do |form| %>
+  <%= render "shared/errors", obj: shop %>
   <div class="form-group">
     <%= form.label :name %>
     <%= form.text_field :name, class: "form-control" %>
@@ -20,8 +21,8 @@
     <%= form.text_area :address, class: "form-control" %>
   </div>
   <div class="form-group">
-    <%= form.label :HP %>
-    <%= form.url_field :HP, class: "form-control" %>
+    <%= form.label :hp %>
+    <%= form.url_field :hp, class: "form-control" %>
   </div>
   <div class="form-group">
     <%= form.label :opentime %>
